@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import design from "../../design/mobile-menu-expanded.jpg";
 
 function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -19,7 +18,6 @@ function App() {
             : ""
         }`}
       >
-        {/* <img src={design} alt="" className="opacity-20 absolute z-50" /> */}
         <Navbar isNavbarOpen={isNavbarOpen} handleNavbar={handleNavbar} />
         <Home isNavbarOpen={isNavbarOpen} />
       </div>
